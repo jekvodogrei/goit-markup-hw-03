@@ -1,0 +1,239 @@
+:root {
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    --accent-color: #2196F3;
+    --title-color: #212121;
+    --text-color: #757575;
+    --secondary-color: #FFFFFF;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+.title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--wain-font);
+}
+
+    /* header */
+
+.menu-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-family: var(--main-font);
+    color: var(--title-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color)
+}
+
+.menu-link.current {
+    color: var(--accent-color)
+}
+
+.tel-link {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.tel-link:hover,
+.tel-link:focus {
+    color: var(--accent-color)
+}
+
+.hero-title {
+    font-family: var(--main-font);
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    /* color: #FFFFFF; */
+    font-weight: 900;
+}
+
+.modal-btn {
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.87;
+    /* identical to box height, or 187% */ 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;  
+    color: var(--secondary-color);
+    background-color: #188CE8;
+  }
+  
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color:var(--accent-color);
+    color: var(--secondary-color);
+  }
+
+  /* end header */
+
+  /* about */
+
+.parts_description {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;  
+    color: var(--title-color);
+  }
+
+.description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    font-family: var(--main-font);
+}
+
+.first_block {   
+    font-family: var(--main-font);
+    font-size: 36px;
+    line-height: 1.27;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+
+.second_block {
+    font-family: var(--main-font);
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+
+.staff_name {
+    font-style: normal;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}
+
+.position {
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}
+
+/* end about */
+
+
+/* footer */
+
+.lower_menu {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    color: var(--text-color);     
+}
+
+.lower_menu:hover,
+.lower_menu:focus {
+    color: var(--secondary-color);
+}
+
+/* end footer */
+
+
+            /* ============= PORTFOLIO ============== */
+
+
+/* style buttons */
+
+.portfolio_buttons_style{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2;
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    font-style: normal;
+    border:none;
+
+}
+
+.portfolio_buttons_style:hover,
+.portfolio_buttons_style:focus {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2;
+    /* identical to box height, or 162% */
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: var(--secondary-color);
+    background: var(--accent-color);
+    
+}
+
+/* end style buttons */
+
+.header_style {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    font-style: normal;
+}
+
+.description_style {
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    /* identical to box height, or 187% */
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    font-style: normal;
+}
+
+/* out style buttons */
