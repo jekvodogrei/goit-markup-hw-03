@@ -194,6 +194,7 @@ body {
 .hero-title {
     position: absolute;
     width: 696px;
+    left: 452px;
     height: 120px;
     top: 280px;
     font-family: Roboto;
