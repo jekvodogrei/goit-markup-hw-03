@@ -7,19 +7,32 @@
     --secondary-color: #FFFFFF;
 }
 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, 
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 li {
     list-style-type: none; /* Убираем маркеры */
 }
 
-.title {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-}
 
 .list {
     list-style: none;
@@ -29,15 +42,105 @@ li {
     text-decoration: none;
 }
 
+
 body {
     font-family: var(--wain-font);
+    font-weight: 400;
 }
 
-    /* header */
+
+    /*----------- components ------------*/
+
+
+
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+} 
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 92px;
+  }
+  
+.title {
+    font-family: Raleway;
+    margin-left: 60px;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+      
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.banner {
+    position: absolute;
+    height: 80px;
+    left: 0px;
+    width: 1600px;
+    top: 0px;
+
+}
+
+
+    /*---------------- header ------------------*/
+
+
+
+.modal-btn {
+    position: absolute;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+    width: 200px;
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.87;
+    /* identical to box height, or 187% */ 
+    display: flex;
+    letter-spacing: 0.06em;  
+    color: var(--secondary-color);
+    background-color: #188CE8;
+    border-radius: 5px;
+    padding: 10px 0px 0px 30px;
+  }
+  
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color:var(--accent-color);
+    color: var(--secondary-color);
+  }
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 
 .menu-link {
-    font-style: normal;
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -54,14 +157,24 @@ body {
     color: var(--accent-color)
 }
 
-.tel-link {
+
+.mail-link {
     font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    margin-left: auto;
+    margin-right: 45px;
+}
+
+.tel-link {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    margin-right: -50px;
 }
 
 .tel-link:hover,
@@ -69,42 +182,69 @@ body {
     color: var(--accent-color)
 }
 
+.mail-link:hover,
+.mail-link:focus {
+    color: var(--accent-color)
+}
+
+  /*------------------ end header -------------*/
+
+  /*-------------- Banner -------------*/
+
 .hero-title {
-    font-family: var(--main-font);
+    position: absolute;
+    width: 696px;
+    height: 120px;
+    top: 280px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
-    /* or 136% */
+    line-height: 60px;
+    /* or 136% */ 
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     /* color: #FFFFFF; */
-    font-weight: 900;
 }
 
-.modal-btn {
-    font-family: var(--main-font);
-    font-size: 16px;
-    line-height: 1.87;
-    /* identical to box height, or 187% */ 
+/*-------------- End Banner -------------*/
+
+  /*---------------- about ---------------*/
+
+  .section-container-about{
+
+}
+
+.about-us {
+    display: inline-block;
     display: flex;
     align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;  
-    color: var(--secondary-color);
-    background-color: #188CE8;
-  }
-  
-.modal-btn:hover,
-.modal-btn:focus {
-    background-color:var(--accent-color);
-    color: var(--secondary-color);
-  }
+    margin-left: -30px;
+    margin-top: -30px; 
+    margin-bottom: 100px;
+}
 
-  /* end header */
+.about-us-details {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    margin-top: 30px; 
+}
 
-  /* about */
+.container-about {
+    position: absolute;
+    width: 1170px;
+    left: 215px;
+    top: 774px;
+    height: 101px;
+}
 
 .parts_description {
+    margin-bottom: 20px;
+    width: 270px;
+    left: 215px;
+    top: 774px;
+    height: 16px;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: bold;
@@ -116,16 +256,19 @@ body {
   }
 
 .description {
-    font-style: normal;
-    font-weight: normal;
+    height: 75px;
+    font-family: Roboto;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.714;
     /* or 171% */
     letter-spacing: 0.03em;
-    font-family: var(--main-font);
+    color: var(--text-color);
 }
 
-.first_block {   
+.first_block {
+    display: inline-block;
+    text-align: center;
+    margin-left: 400px;
     font-family: var(--main-font);
     font-size: 36px;
     line-height: 1.27;
@@ -134,6 +277,9 @@ body {
 }
 
 .second_block {
+    margin-top: 90px;
+    margin-left: 660px;
+    margin-bottom: 60px;
     font-family: var(--main-font);
     font-size: 36px;
     line-height: 1.17;
@@ -150,6 +296,8 @@ body {
     letter-spacing: 0.03em;
 }
 
+.us-projects
+
 .position {
     font-family: var(--main-font);
     font-size: 16px;
@@ -160,8 +308,89 @@ body {
 
 /* end about */
 
+/* services */
+
+.us-services {
+    display: flex;
+    margin-left: -30px;
+    height: 296px;
+    margin-bottom: 90px;
+    
+}
+
+.container-services {
+    position: absolute;
+    width: auto;
+    left: 215px;
+    top: 969px;
+}
+
+.services {
+    margin-left: 30px;
+    margin-top: 30px; 
+    flex-basis: calc((100% - 90px) / 3);
+}
+/* end services */
+
+/* our-team */
+
+.our-team {
+    display: flex;
+    margin-left: 190px;
+    margin-top: 30px; 
+    height: 368px;
+    left: 215px;
+    top: 1642px;
+    width: 1170px;
+}
+
+.our-team-us {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    margin-top: 30px; 
+    box-shadow: none;
+
+}
+
+.container-our-team{
+    position: absolute;
+    height: 648px;
+    left: 0px;
+    top: 1445px;
+    background-color: #F5F4FA;;
+    width: 1600px;
+}
+
+.box-our-team { 
+
+}
+
+/* and our-team */
 
 /* footer */
+
+.web-link {
+    margin-left: -8px;
+}
+
+.footer-box {
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2093px;
+    position: absolute;
+}
+
+.footer {
+    margin-top: 60px;
+    display: flex;
+
+}
+
+.footer-box-us{
+    margin-bottom: 64px;
+    margin-left: 215px;
+}
 
 .lower_menu {
     font-family: var(--main-font);
@@ -176,35 +405,50 @@ body {
     color: var(--secondary-color);
 }
 
+
 /* end footer */
 
 
             /* ============= PORTFOLIO ============== */
 
+.section-portfolio {
+    margin-left: 215px;
+}
 
 /* style buttons */
 
+.buttons-nav {
+    display: flex;
+    padding-left: 270px;
+}
+
+/* .button-portfolio {
+    margin-right: auto;
+    height: auto;
+} */
+
 .portfolio_buttons_style{
     font-family: var(--main-font);
-    font-weight: 500;
+    margin-top: 94px;
+    width: auto;
+    padding: 12px 20px;
     font-size: 16px;
-    line-height: 2;
-    /* text-align: center; */
     letter-spacing: 0.03em;
     color: var(--title-color);
     font-style: normal;
-    border:none;
-
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .portfolio_buttons_style:hover,
 .portfolio_buttons_style:focus {
     font-family: var(--main-font);
     font-weight: 500;
-    font-size: 16px;
-    line-height: 2;
     /* identical to box height, or 162% */
-    /* text-align: center; */
     letter-spacing: 0.03em;
     font-style: normal;
     color: var(--secondary-color);
@@ -213,6 +457,28 @@ body {
 }
 
 /* end style buttons */
+.us-projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: -30px;
+    margin-top: 50px; 
+}
+
+.projects {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px; 
+}
+
+.project-box {
+    width: 370px;
+    height: 404px;
+    left: 215px;
+    top: 262px;
+    border-radius: black
+    ;
+}
 
 .header_style {
     font-family: var(--main-font);
@@ -234,6 +500,14 @@ body {
     letter-spacing: 0.03em;
     color: var(--text-color);
     font-style: normal;
+}
+
+.footer-box-portfolio {
+    position: absolute;
+    height: 252px;
+    left: 0px;
+    top: 1628px;
+    width: 1600px;
 }
 
 /* out style buttons */

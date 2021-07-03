@@ -7,87 +7,87 @@
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
 
   <body>
     <!-- header -->
     <header class="header">
-      <a class="title link" href="./index.html">WebStudio</a>
+      <div class="container header-container">
+        <a class="logo title link" href="./index.html">WebStudio</a>
       <nav class="navigation">
         <ul class="menu list">
-          <li class="munu-item">
+          <li class="menu-item">
             <a class="menu-link link current" href="./index.html">Студия</a>
           </li>
-          <li class="munu-item">
+          <li class="menu-item">
             <a class="menu-link link" href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="munu-item">
+          <li class="menu-item">
             <a class="menu-link link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a class="tel-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li>
+          <a class="mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           <a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!-- Banner -->
-
     <section>
+    <div class="container banner">
       <h1 class="hero-title">
         Эффективные решения <br />
         для вашего бизнеса
       </h1>
       <button class="modal-btn" type="button">Заказать услугу</button>
     </section>
+    </div>
 
-    <!-- about -->
     <main>
-      <section>
+      <!-- about -->
+      <section class="section-container-about">
+      <div class="container-about container">
         <h2 hidden>О нас</h2>
-        <ul>
-          <li>
+        <ul class="about-us">
+          <li class="about-us-details">
             <h3 class="parts_description">Внимание к деталям</h3>
             <p class="description">
               Идейные соображения, а также начало повседневной работы по формированию позиции
             </p>
           </li>
-          <li>
+          <li class="about-us-details">
             <h3 class="parts_description">Пунктуальность</h3>
             <p class="description">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="about-us-details">
             <h3 class="parts_description">Планирование</h3>
             <p class="description">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="about-us-details">
             <h3 class="parts_description">Современные технологии</h3>
             <p class="description">
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
             </p>
           </li>
         </ul>
+        </div>
       </section>
-
+    
       <!-- services -->
-
-      <section>
+    <section>
+      <div class="container-services container">
         <h2 class="first_block">Чем мы занимаемся</h2>
-        <ul>
-          <li>
+        <ul class="us-services">
+          <li class="services">
             <img src="./images/img.jpg" alt="Пишет разметку страниц" width="370" height="294" />
           </li>
-          <li>
+          <li class="services">
             <img
               src="./images/img_2.jpg"
               alt="Разрабатывает программу под андроид"
@@ -95,47 +95,49 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="services">
             <img src="./images/img_3.jpg" alt="Подбирает цвет" width="370" height="294" />
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
       <!-- our team -->
-
-      <section>
+     <section class="container-our-team">
+    <div class="box-our-team ">
         <h2 class="second_block">Наша команда</h2>
-        <ul>
-          <li>
+        <ul class="our-team">
+          <li class="our-team-us">
             <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260" />
             <p class="staff_name">Игорь Демьяненко</p>
             <p class="position" lang="en">Product Designer</p>
           </li>
-          <li>
+          <li class="our-team-us">
             <img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260" />
             <p class="staff_name">Ольга Репина</p>
             <p class="position" lang="en">Frontend Developer</p>
           </li>
-          <li>
+          <li class="our-team-us">
             <img src="./images/nicolay.jpg" alt="Николай Тарасов" width="270" height="260" />
             <p class="staff_name">Николай Тарасов</p>
             <p class="position" lang="en">Marketing</p>
           </li>
-          <li>
+          <li class="our-team-us">
             <img src="./images/mikhail.jpg" alt="Михаил Ермаков" width="270" height="260" />
             <p class="staff_name">Михаил Ермаков</p>
             <p class="position" lang="en">UI Designer</p>
           </li>
         </ul>
       </section>
+      </div>
     </main>
 
     <!-- footer -->
-
+    <div class="footer-box container">
     <footer class="footer">
-      <a class="title link" href="#">WebStudio</a>
       <address>
-        <ul>
+        <ul class="footer-box-us">
+          <li><a class="title link web-link" href="#">WebStudio</a> </li>
           <li>
             <a class="lower_menu link" href="https://goo.gl/maps/vjuT3KmpGd8uThZYA" target="blank" rel="noopener noreferrer"
               >г. Киев, пр-т Леси Украинки, 26</a
@@ -150,5 +152,6 @@
         </ul>
       </address>
     </footer>
+    </div>
   </body>
 </html>
