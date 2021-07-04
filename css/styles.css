@@ -100,7 +100,7 @@ body {
 .banner {
     height: 80px;
     left: 0px;
-    width: 1600px;
+    width: auto;
     top: 0px;
 
 }
@@ -275,8 +275,8 @@ body {
 
 .second_block {
     margin-top: 90px;
-    margin-left: 660px;
-    margin-bottom: 60px;
+    padding:  92px 92px 60px 92px;
+    margin-left: 600px;
     font-family: var(--main-font);
     font-size: 36px;
     line-height: 1.17;
@@ -334,7 +334,6 @@ body {
 .our-team {
     display: flex;
     margin-left: 190px;
-    margin-top: 30px; 
     height: 368px;
     left: 215px;
     top: 1642px;
@@ -344,18 +343,22 @@ body {
 .our-team-us {
     flex-basis: calc((100% - 120px) / 4);
     margin-left: 30px;
-    margin-top: 30px; 
     box-shadow: none;
 
 }
 
-.container-our-team{
-    position: absolute;
+.container-our-team {
+   margin-top: 1252px;
     height: 648px;
     left: 0px;
     top: 1445px;
-    background-color: #F5F4FA;;
-    width: 1600px;
+    background-color: #F5F4FA;
+    width: auto;
+}
+
+.box-our-team {
+    background-color: #F5F4FA;
+    margin-right: ;
 }
 
 
@@ -368,7 +371,7 @@ body {
 }
 
 .footer-box {
-    width: 1600px;
+    width: auto;
     height: 252px;
     left: 0px;
     top: 2093px;
@@ -501,7 +504,7 @@ body {
     height: 252px;
     left: 0px;
     top: 1628px;
-    width: 1600px;
+    width: auto;
 }
 
 /* out style buttons */
