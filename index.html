@@ -13,10 +13,10 @@
 
   <body>
     <!-- header -->
-    <header class="header">
+    <header class="header container">
       <div class="container header-container">
-        <a class="logo title link" href="./index.html">WebStudio</a>
-      <nav class="navigation">
+        <nav class="navigation">
+        <a class="logo title link" href="./"><span class="logo-span">Web</span>Studio</a>
         <ul class="menu list">
           <li class="menu-item">
             <a class="menu-link link  current" href="./index.html">Студия</a>
@@ -29,47 +29,51 @@
           </li>
         </ul>
       </nav>
-          <a class="mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+      <ul class="list menu-contacts">
+        <li class="menu-contacts-link">
+          <a class="mail-link link header-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="menu-contacts-link">
+          <a class="tel-link link header-link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
       </div>
     </header>
-
+    
+    <main>
     <!-- Banner -->
-    <section>
-    <div class="container banner">
+    <section class="container banner">
       <h1 class="hero-title">
         Эффективные решения <br />
         для вашего бизнеса
       </h1>
-      <button class="modal-btn" type="button">Заказать услугу</button>
+      <button class="modal-btn hero-btn" type="button">Заказать услугу</button>
     </section>
-    </div>
 
-    <main>
       <!-- about -->
-      <section class="section-container-about">
-      <div class="container-about container">
+      <section class="services section">
+      <div class="container">
         <h2 hidden>О нас</h2>
-        <ul class="about-us">
-          <li class="about-us-details">
+        <ul class="list services-container">
+          <li class="serveces-box">
             <h3 class="parts_description">Внимание к деталям</h3>
             <p class="description">
               Идейные соображения, а также начало повседневной работы по формированию позиции
             </p>
           </li>
-          <li class="about-us-details">
+          <li class="serveces-box">
             <h3 class="parts_description">Пунктуальность</h3>
             <p class="description">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
-          <li class="about-us-details">
+          <li class="serveces-box">
             <h3 class="parts_description">Планирование</h3>
             <p class="description">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
-          <li class="about-us-details">
+          <li class="serveces-box">
             <h3 class="parts_description">Современные технологии</h3>
             <p class="description">
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -80,21 +84,15 @@
       </section>
     
       <!-- services -->
-    <section>
-      <div class="container-services container">
+    <section class="container-services">
+      <div class="container">
         <h2 class="first_block">Чем мы занимаемся</h2>
-        <ul class="us-services">
+        <ul class="list us-services">
           <li class="services">
             <img src="./images/img.jpg" alt="Пишет разметку страниц" width="370" height="294" />
           </li>
           <li class="services">
-            <img
-              src="./images/img_2.jpg"
-              alt="Разрабатывает программу под андроид"
-              width="370"
-              height="294"
-            />
-          </li>
+            <img  src="./images/img_2.jpg"  alt="Разрабатывает программу под андроид"  width="370" height="294"/></li>
           <li class="services">
             <img src="./images/img_3.jpg" alt="Подбирает цвет" width="370" height="294" />
           </li>
@@ -103,10 +101,10 @@
     </section>
 
       <!-- our team -->
-     <section class="container-our-team">
-    <div class="box-our-team ">
+     <section class="container-our-team section">
+    <div class="container box-our-team ">
         <h2 class="second_block">Наша команда</h2>
-        <ul class="our-team">
+        <ul class="list our-team">
           <li class="our-team-us">
             <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260" />
             <p class="staff_name">Игорь Демьяненко</p>
@@ -133,21 +131,23 @@
     </main>
 
     <!-- footer -->
-    <div class="footer-box container">
     <footer class="footer">
-      <address>
-        <ul class="footer-box-us">
-          <li><a class="title link web-link" href="#">WebStudio</a> </li>
-          <li>
-            <a class="lower_menu link" href="https://goo.gl/maps/vjuT3KmpGd8uThZYA" target="blank" rel="noopener noreferrer"
+      <div class="container">
+          <div class="footer-logo">
+          <a class="title link web-link" href="#"><span class="logo-span-footer">Web</span>Studio</a>
+          </div>
+          <address>
+          <ul class="list footer-box-us"></ul>
+          <li class="address-item-footer">
+            <a class="address-link link" href="https://goo.gl/maps/vjuT3KmpGd8uThZYA" target="blank" rel="noopener noreferrer"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li>
-            <a class="lower_menu link" href="mailto:info@example.com">info@example.com</a>
+          <li class="address-item-footer">
+            <a class="mail-link link footer-link" href="mailto:info@example.com">info@example.com</a>
           </li>
-          <li>
-            <a class="lower_menu link" href="tel:+380991111111">+38 099 111 11 11</a>
+          <li class="address-item-footer">
+            <a class="tel-link link footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
           </li>
         </ul>
       </address>
